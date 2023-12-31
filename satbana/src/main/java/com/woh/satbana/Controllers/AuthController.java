@@ -24,7 +24,7 @@ public class AuthController {
         boolean checkUser = userService.checkUser(createUserDTO);
         if (!checkUser){
             User user = mapper.map(createUserDTO,User.class);
-           jwtService.generateJwtToken()
+           jwtService.generateJwtToken();
         }
     }
 
