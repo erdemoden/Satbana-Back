@@ -24,4 +24,8 @@ public class MailController {
     public ResponseEntity<String> sendCodeMail(@RequestParam("mail") String mail){
         return ResponseEntity.ok(mailService.sendMail(mail));
     }
+    @GetMapping("/checkmail")
+    public ResponseEntity<Boolean> checkCodeMail(@RequestParam("mail") String mail,@RequestParam("key") String key){
+        return ResponseEntity.ok(mailService.checkMail(key,mail));
+    }
 }
