@@ -1,6 +1,17 @@
 server:
   port: 1999
 spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: serkafidanci@gmail.com
+    password: yzdl vyzs lpjn apid
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
   application:
     name: MAILSERVICE
 eureka:
