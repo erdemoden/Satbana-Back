@@ -1,0 +1,25 @@
+server:
+  port: 1998
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Satbana
+    username: postgres
+    password: elma
+  jpa:
+    hibernate:
+      ddl-auto: update
+  application:
+    name: USER-SERVICE
+
+satbana:
+  secret-hash: "At$iV^?eJ|v,R:z<@Fsx^&]+9.(T=g8nyHQW_gtQ6mRTZ>c?b5%e<&G~"
+  expiresin: 604800000
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
