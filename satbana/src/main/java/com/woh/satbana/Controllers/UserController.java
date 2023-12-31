@@ -14,7 +14,7 @@ public class UserController {
 
     @PostMapping("/save")
     public void saveUser(@RequestBody CreateUserDTO createUserDTO){
-    userService.saveUser(createUserDTO);
+    userService.saveUserCreateJWT(createUserDTO);
     }
     @GetMapping("/hello")
     public String hello(){
