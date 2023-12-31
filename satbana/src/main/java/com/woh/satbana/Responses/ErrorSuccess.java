@@ -6,4 +6,5 @@ import lombok.Data;
 public class ErrorSuccess {
     private String error;
     private String success;
+    private String jwt;
 }
