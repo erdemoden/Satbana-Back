@@ -1,4 +1,4 @@
-package com.woh.satbana.Services;
+package com.woh.satbana.Business.Services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
