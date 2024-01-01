@@ -1,7 +1,8 @@
 package com.woh.satbana.Controllers;
 
+
+import com.woh.satbana.Business.Services.UsersSevice;
 import com.woh.satbana.DTO.CreateUserDTO;
-import com.woh.satbana.Services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,11 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
 
-    private final UserService userService;
+    private final UsersSevice usersService;
 
     @PostMapping("/save")
     public void saveUser(@RequestBody CreateUserDTO createUserDTO){
-    userService.saveUserCreateJWT(createUserDTO);
+    usersService.saveUserCreateJWT(createUserDTO);
     }
     @GetMapping("/hello")
     public String hello(){
