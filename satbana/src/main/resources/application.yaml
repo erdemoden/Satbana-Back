@@ -14,6 +14,7 @@ spring:
 satbana:
   secret-hash: "At$iV^?eJ|v,R:z<@Fsx^&]+9.(T=g8nyHQW_gtQ6mRTZ>c?b5%e<&G~"
   expiresin: 604800000
+  database-hash: "3n2^(q'e,\r*F\t5<T%>a\x0c_2W\\&x{d,\n\n'-Z_EUD;Vp\\IPUSGxAtkqXb"
 
 eureka:
   instance:

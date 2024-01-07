@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -21,11 +23,15 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.awt.image.DataBuffer;
+import java.util.List;
 
 @Slf4j
 @Component
 @RequiredArgsConstructor
 public class JWTFilter implements GlobalFilter, Ordered {
+
+    @Value("${jwtfilter.exclude.paths}")
+    String safePaths;
     private final ObjectMapper mapper = new ObjectMapper();
     private final JWTService jwtService;
     @SneakyThrows
@@ -38,8 +44,14 @@ public class JWTFilter implements GlobalFilter, Ordered {
         try {
             String extractedJwt = extractJwtFromRequest(exchange.getRequest());
 
-            if(StringUtils.hasText(extractedJwt) && jwtService.isJwtValid(extractedJwt)){
-                chain.filter(exchange);
+            for (String path : safePaths.split(";")){
+                log.info(exchange.getRequest().getURI().getPath());
+                if(exchange.getRequest().getURI().getPath().startsWith(path)){
+                  return  chain.filter(exchange);
+                }
+            }
+            if(extractedJwt !=null && StringUtils.hasText(extractedJwt) && jwtService.isJwtValid(extractedJwt)){
+               return chain.filter(exchange);
             }
             else{
                 jwtFilterResponse.setAuthenticated(false);

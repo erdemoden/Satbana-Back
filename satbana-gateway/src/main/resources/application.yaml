@@ -9,7 +9,7 @@ spring:
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/user/**
+            - Path=/user/**,/auth/**
 eureka:
   instance:
     prefer-ip-address: true
@@ -22,3 +22,7 @@ eureka:
 satbana:
   secret-hash: "At$iV^?eJ|v,R:z<@Fsx^&]+9.(T=g8nyHQW_gtQ6mRTZ>c?b5%e<&G~"
   expiresin: 604800000
+
+jwtfilter:
+  exclude:
+    paths: "/auth;"
