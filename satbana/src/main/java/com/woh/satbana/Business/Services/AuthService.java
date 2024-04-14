@@ -8,6 +8,8 @@ import java.security.NoSuchProviderException;
 
 public interface AuthService {
 
-    ErrorSuccess checkUserSendMail(CreateUserDTO createUserDTO);
+    ErrorSuccess checkUserForSignUpSendMail(CreateUserDTO createUserDTO);
+    ErrorSuccess checkUserForLoginSendMail(CreateUserDTO createUserDTO);
     ErrorSuccess checkMailSaveUser(CreateUserDTO createUserDTO) throws NoSuchAlgorithmException, NoSuchProviderException;
+    ErrorSuccess checkMailForLogin(CreateUserDTO createUserDTO) throws NoSuchAlgorithmException, NoSuchProviderException;
 }

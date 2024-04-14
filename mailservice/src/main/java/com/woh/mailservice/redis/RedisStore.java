@@ -1,4 +1,4 @@
-package com.woh.mailservice.redis;
+package com.woh.mailservice.Redis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;

@@ -2,6 +2,7 @@ package com.woh.satbanagateway.Filters;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.woh.satbanagateway.DTO.UserDTO;
 import com.woh.satbanagateway.Responses.JWTFilterResponse;
 import com.woh.satbanagateway.Responses.AuthResponse;
 import com.woh.satbanagateway.Services.JWTService;
@@ -19,6 +20,7 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -32,8 +34,11 @@ public class JWTFilter implements GlobalFilter, Ordered {
 
     @Value("${jwtfilter.exclude.paths}")
     String safePaths;
+    @Value("${userservice}")
+    String userService;
     private final ObjectMapper mapper = new ObjectMapper();
     private final JWTService jwtService;
+
     @SneakyThrows
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {

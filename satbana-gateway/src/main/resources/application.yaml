@@ -21,8 +21,12 @@ eureka:
 
 satbana:
   secret-hash: "At$iV^?eJ|v,R:z<@Fsx^&]+9.(T=g8nyHQW_gtQ6mRTZ>c?b5%e<&G~"
+  randomStringBase: "ABCDEFGHIJKLMNOPRSTUVYZQWabcdefghijklmnoprstuvyzqw1234567890+/="
   expiresin: 604800000
+  redishash: "SellTheFuckingThingToMe"
 
 jwtfilter:
   exclude:
     paths: "/auth;"
+
+userservice: "http://USER-SERVICE/user/getUserById/"
