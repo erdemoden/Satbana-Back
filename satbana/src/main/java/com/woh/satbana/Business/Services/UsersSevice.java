@@ -2,10 +2,13 @@ package com.woh.satbana.Business.Services;
 
 import com.woh.satbana.DTO.CreateUserDTO;
 import com.woh.satbana.Entities.User;
-import com.woh.satbana.Responses.ErrorSuccess;
+
+import java.util.Optional;
 
 public interface UsersSevice {
-    boolean checkUser(CreateUserDTO createUserDTO);
+    boolean checkUserForSignUp(CreateUserDTO createUserDTO);
+    boolean checkUserForLogin(CreateUserDTO createUserDTO);
     User saveUser(CreateUserDTO createUserDTO);
-
+    Optional<User> getUserById(String id);
+    Optional<User> findByEmail(String email);
 }

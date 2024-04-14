@@ -1,12 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60f87e5d-b5a4-492b-ab56-728400dc06ba" name="Changes" comment="" />
+    <list default="true" id="60f87e5d-b5a4-492b-ab56-728400dc06ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Satbana-Jobs/src/main/java/com/woh/SatbanaJobs/Jobs/BaseJob/IBaseJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Satbana-Jobs/src/main/java/com/woh/SatbanaJobs/Jobs/BaseJobImpl/ChangeRedisHash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Satbana-Jobs/src/main/java/com/woh/SatbanaJobs/Jobs/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Satbana-Jobs/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/Service/Mailimtl/MailserviceImtl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/Service/Mailimtl/MailserviceImtl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/redis/RedisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/redis/RedisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/redis/RedisStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/mailservice/src/main/java/com/woh/mailservice/redis/RedisStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/satbana-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/Filters/JWTFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/Filters/JWTFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/SatbanaGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/SatbanaGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/Services/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana-gateway/src/main/java/com/woh/satbanagateway/Services/JWTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/satbana-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/AuthManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/JWTManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/JWTManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/UsersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Manegers/UsersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/JWTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/UsersSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Business/Services/UsersSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/satbana/src/main/java/com/woh/satbana/Controllers/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "erdemoden"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/erdemoden/Satbana-Back.git",
+    "accountId": "1339127f-5683-454a-898f-288cb8175cb8"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2XBJEwXYPUcFzUvMHSWYMF0oKBG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -17,10 +57,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Erdem",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/erdemoden/Desktop/Satbana-backend",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -30,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698096432135</updated>
       <workItem from="1698096433448" duration="33000" />
+      <workItem from="1712604006615" duration="105000" />
     </task>
     <servers />
   </component>

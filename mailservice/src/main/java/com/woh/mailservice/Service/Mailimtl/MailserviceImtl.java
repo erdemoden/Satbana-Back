@@ -1,7 +1,7 @@
 package com.woh.mailservice.Service.Mailimtl;
 
 import com.woh.mailservice.Service.MailService;
-import com.woh.mailservice.redis.RedisStore;
+import com.woh.mailservice.Redis.RedisStore;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
@@ -95,7 +95,7 @@ public class MailserviceImtl implements MailService {
     }
     @Override
     public Boolean checkMail(String key,String mail){
-        if( Redisstore.getValue(key)!=null && Redisstore.getValue(key).equals(mail)){
+        if(Redisstore.getValue(key)!=null && Redisstore.getValue(key).equals(mail)){
             return true;
         }
         return false;

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SATBANA-JOBS
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+
+change-redis-hash:
+  cron: "0 0 1 * *"
+  id: "change-redis-hash"
